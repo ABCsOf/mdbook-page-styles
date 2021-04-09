@@ -798,7 +798,7 @@ dependencies = [
  "memchr",
  "notify",
  "open",
- "pulldown-cmark",
+ "pulldown-cmark 0.7.2",
  "regex",
  "serde",
  "serde_derive",
@@ -818,6 +818,8 @@ dependencies = [
  "env_logger 0.8.3",
  "log",
  "mdbook",
+ "pulldown-cmark 0.8.0",
+ "pulldown-cmark-to-cmark",
  "serde",
  "serde_json",
  "toml",
@@ -1152,6 +1154,26 @@ dependencies = [
  "getopts",
  "memchr",
  "unicase",
+]
+
+[[package]]
+name = "pulldown-cmark"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ffade02495f22453cd593159ea2f59827aae7f53fa8323f756799b670881dcf8"
+dependencies = [
+ "bitflags",
+ "memchr",
+ "unicase",
+]
+
+[[package]]
+name = "pulldown-cmark-to-cmark"
+version = "6.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e8f2b9878102358ec65434fdd1a9a161f8648bb2f531acc9260e4d094c96de23"
+dependencies = [
+ "pulldown-cmark 0.8.0",
 ]
 
 [[package]]
